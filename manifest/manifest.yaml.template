@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: $name-server
+spec:
+  selector:
+    matchLabels:
+      run: $name-app
+  template:
+    metadata:
+      labels:
+        run: $name-app
+    spec:
+      containers:
+      - name: digitalai-release
+        image: xl-release
+        ports:
+        - containerPort: 5516
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: $name-service
+  labels:
+    run: $name-app
+spec:
+  ports:
+  - port: 5516
+    protocol: TCP
+  selector:
+    run: $name-app
