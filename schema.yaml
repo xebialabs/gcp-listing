@@ -1,32 +1,22 @@
 x-google-marketplace:
   schemaVersion: v2
 
-  applicationApiVersion: v1beta1
-  # The published version is required and MUST match the tag
-  # of the deployer image
-  publishedVersion: '23.1'
-  publishedVersionMetadata:
-    releaseNote: >-
-      A first release.
-  # The images property will be filled in during part 2
-  images: 
-    '':  # Primary image has no name.
-    properties:
-      imageRepo:
-        type: REPO_WITH_REGISTRY
-      imageTag:
-        type: TAG
-
+application_api_version: v1beta1
 properties:
-  name:
-    type: string
-    x-google-marketplace:
-      type: NAME
-  namespace:
-    type: string
-    x-google-marketplace:
-      type: NAMESPACE
-
+name:
+  type: string
+  x-google-marketplace:
+   type: NAME
+namespace:
+  type: string
+  x-google-marketplace:
+   type: NAMESPACE
+imagerelease:
+  type: string
+  default: gcr.io/digitalai-public/release/xl-release:24.1.21
+  x-google-marketplace:
+   type: IMAGE
+  
 required:
 - name
 - namespace

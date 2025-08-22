@@ -4,13 +4,13 @@ metadata:
   name: "$name"
   namespace: "$namespace"
   annotations:
-    marketplace.cloud.google.com/deploy-info: '{"partner_id": "partner", "product_id": "xl-release", "partner_name": "Partner"}'
+    marketplace.cloud.google.com/deploy-info: '{"partner_id": "digitalai-public", "product_id": "xl-release", "partner_name": "Digital.ai"}'
   labels:
     app.kubernetes.io/name: "$name"
 spec:
   descriptor:
-    type: nginx
-    version: '0.1.1'
+    type: xl-release
+    version: '24.1.21'
   selector:
     matchLabels:
       app.kubernetes.io/name: "$name"
