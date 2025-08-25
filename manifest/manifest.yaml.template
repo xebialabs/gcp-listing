@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: digitalai-release
-        image: xl-release
+        image: xl-release:24.2
         ports:
         - containerPort: 5516
 ---

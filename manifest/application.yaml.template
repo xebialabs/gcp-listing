@@ -10,7 +10,7 @@ metadata:
 spec:
   descriptor:
     type: xl-release
-    version: '24.1.21'
+    version: '24.2'
   selector:
     matchLabels:
       app.kubernetes.io/name: "$name"

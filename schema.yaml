@@ -13,7 +13,7 @@ namespace:
    type: NAMESPACE
 imagerelease:
   type: string
-  default: gcr.io/digitalai-public/release/xl-release:24.1.21
+  default: gcr.io/digitalai-public/release/xl-release:24.2
   x-google-marketplace:
    type: IMAGE
   
