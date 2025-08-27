@@ -25,7 +25,6 @@ properties:
     type: string
     x-google-marketplace:
       type: NAMESPACE  
-  required:
+required:
   - name
   - namespace
-
