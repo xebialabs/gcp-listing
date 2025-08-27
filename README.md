@@ -10,10 +10,10 @@ https://github.com/GoogleCloudPlatform/marketplace-k8s-app-tools/blob/master/doc
 2. Update version in schema.yaml
 3. Commit changes
 4. Open GCloud shell in GCP
-5. Checkout this repo
+5. Checkout this repo : https://github.com/xebialabs/gcp-listing.git
 6. Set env variables
     * `export REGISTRY=gcr.io/digitalai-public`
-    * `export APP_NAME=release`. 
+    * `export APP_NAME=release`
 7. Run `docker build --tag $REGISTRY/$APP_NAME/deployer .`
 8. Run `docker push $REGISTRY/$APP_NAME/deployer`
 9. Additional Run `docker tag $REGISTRY/$APP_NAME/deployer $REGISTRY/$APP_NAME/deployer:<new-version>` & docker push $REGISTRY/$APP_NAME/deployer:<new-version>
