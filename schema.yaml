@@ -17,14 +17,14 @@ images:
       imageTag:
         type: '24.2'
 properties:
-name:
-  type: string
-  x-google-marketplace:
-   type: NAME
-namespace:
-  type: string
-  x-google-marketplace:
-   type: NAMESPACE
+  name:
+    type: string
+    x-google-marketplace:
+    type: NAME
+  namespace:
+    type: string
+    x-google-marketplace:
+    type: NAMESPACE
 imagerelease:
   type: string
   default: gcr.io/digitalai-public/release/xl-release:24.2
