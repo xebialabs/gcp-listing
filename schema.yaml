@@ -13,9 +13,9 @@ x-google-marketplace:
     '':  # Primary image has no name.
       properties:
         imageRepo:
-          type: gcr.io/digitalai-public/release/xl-release
+          type: REPO_WITH_REGISTRY
         imageTag:
-          type: '24.2'
+          type: TAG
 properties:
   name:
     type: string
