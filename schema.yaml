@@ -25,11 +25,6 @@ properties:
     type: string
     x-google-marketplace:
     type: NAMESPACE
-imagerelease:
-  type: string
-  default: gcr.io/digitalai-public/release/xl-release:24.2
-  x-google-marketplace:
-   type: IMAGE
   
 required:
 - name
