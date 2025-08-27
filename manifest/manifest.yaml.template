@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       run: $name-app
+  replicas: $replicas
   template:
     metadata:
       labels:
@@ -13,7 +14,7 @@ spec:
     spec:
       containers:
       - name: digitalai-release
-        image: xl-release:24.2
+        image: xl-release
         ports:
         - containerPort: 5516
 ---
