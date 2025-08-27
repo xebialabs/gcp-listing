@@ -1,21 +1,21 @@
 x-google-marketplace:
   schemaVersion: v2
 
-application_api_version: v1beta1
-publishedVersion: '24.2'
-publishedVersionMetadata:
-  releaseNote: >-
-    Security fix release.
-  releaseTypes:
-  - Security
-  recommended: true
-images:
-  '':  # Primary image has no name.
-    properties:
-      imageRepo:
-        type: gcr.io/digitalai-public/release/xl-release
-      imageTag:
-        type: '24.2'
+  application_api_version: v1beta1
+  publishedVersion: '24.2'
+  publishedVersionMetadata:
+    releaseNote: >-
+      Security fix release.
+    releaseTypes:
+    - Security
+    recommended: true
+  images:
+    '':  # Primary image has no name.
+      properties:
+        imageRepo:
+          type: gcr.io/digitalai-public/release/xl-release
+        imageTag:
+          type: '24.2'
 properties:
   name:
     type: string
@@ -24,9 +24,8 @@ properties:
   namespace:
     type: string
     x-google-marketplace:
-    type: NAMESPACE
-  
-required:
-- name
-- namespace
+    type: NAMESPACE  
+  required:
+  - name
+  - namespace
 
